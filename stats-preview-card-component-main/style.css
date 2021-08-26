@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue:hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white:hsl(0, 0%, 100%);
+    --slightly-transparent-white:hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white:hsla(0, 0%, 100%, 0.6);   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    font-family: 'Inter' ,sans-serif;
+    background-color: var(--very-dark-blue);
+}
+.container{ 
+    margin: 2em 2em;
+    border: 1px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.image{
+    height: 20rem;
+    background:linear-gradient(45deg, rgba(89, 43, 117, 0.5),rgba(51, 18, 71, 0.6)),url('/images/image-header-mobile.jpg') no-repeat center/cover;
+}
+
+.text-area{
+    background-color: var(--dark-desaturated-blue);
+    color: var(--white);
+}
+
+.heading{
+    text-align: center;
+    font-weight: 700;
+    font-size:1.875rem;
+    padding:1.5em .75em 1em;
+}
+
+span{
+    color: var(--soft-violet);
+}
+
+.desc{
+    margin: 0 2em .5em;
+    line-height: 1.7;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.875rem;
+    color: var(--slightly-transparent-white);
+    text-align: center;
+}
+
+.margin{
+   margin-bottom: 1em;
+}
+
+.records{
+    padding: 2em 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.number{
+    font-size: 2em;
+    color: var(--white);
+}
+
+.word{
+    font-size: 0.75em;
+    color: var(--slightly-transparent-white);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+  .container{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      margin: 5em 2em 3em;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+  }
+
+  .image {
+      background:linear-gradient(45deg, rgba(89, 43, 117, 0.5),rgba(51, 18, 71, 0.6)), url('/images/image-header-desktop.jpg') no-repeat center/cover;
+      min-width: 50%;
+      /* background-size: contain; */
+      height: 32rem;
+
+  }
+
+  .text-area{
+      height: 32rem;
+      padding-left: 1em;
+      
+  }
+
+  .heading{
+      text-align: left;
+     
+  }
+
+  .desc{
+    text-align: left;
+   
+  }
+ .records{
+     display: flex;
+     gap: 2em;
+     padding-top: 10rem;
+     padding-left: 1.5em;
+  }
+
+ .number{
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+
+ .word{
+     text-align: left;
+    font-size: .6rem;
+    font-weight: 400;
+
+ }
+}
+
